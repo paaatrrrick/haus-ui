@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--off-black);
+    z-index: 2000000;
+}
+
+.navbar p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.navbarLink {
+    margin-right: 20px;
+    background-color: var(--off-black);
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: underline;
+}
