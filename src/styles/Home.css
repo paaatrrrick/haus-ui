@@ -52,7 +52,7 @@ h4 {
 
 .big-button {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -68,131 +68,26 @@ h4 {
     cursor: pointer;
 }
 
-.userInputsFormDiv {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.text-forms {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-
-
-
-.text-forms div p {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 10px;
+.SUBMIT {
     font-family: 'Helvetica Neue', sans-serif;
-}
-
-.text-forms div input {
-    font-size: 20px;
-    font-weight: 300;
-    width: 300px;
-    padding: 8px;
-    text-decoration: none;
-    border: 1px solid var(--off-black);
-    border-radius: 3px;
-    font-family: 'Helvetica Neue', sans-serif;
-}
-
-.text-forms div input::placeholder {
-    font-size: 20px;
-    font-weight: 300;
-    font-family: 'Helvetica Neue', sans-serif;
-}
-
-.text-forms div input:focus {
-    outline: none;
-}
-
-.picturesList {
-    display: flex;
-    flex-direction: row;
-    height: 30px;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.reverse-section {
-    flex-direction: row-reverse;
-}
-
-.midBtn {
-    width: 20px !important;
-    height: 20px !important;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 10px;
+    background-color: var(--off-black);
     text-align: center;
+    color: #fff;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
 }
 
-@media (max-width: 900px) {
-    .navbar {
-        height: 40px !important;
-    }
-
-    .Home-section {
-        margin-top: 0px;
-        width: 100%;
-    }
-
-    .first-section-text {
-        width: 100%;
-    }
-
-
-    h1 {
-        font-size: 35px;
-        margin-bottom: 0px;
-    }
-
-    h4 {
-        font-size: 24px;
-    }
-
-
-
-    .firstPicture {
-        margin-top: 20px;
-        width: 75%;
-        aspect-ratio: 1/1;
-        overflow: hidden;
-        object-fit: cover;
-        object-position: 100% 10%;
-        border-radius: var(--borderRadius);
-    }
-
-    .big-button {
-        width: 120px;
-        height: 30px;
-        font-size: 16px;
-    }
-
-    .section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section-reverse {
-        flex-direction: column-reverse;
-    }
-
-    .text-forms div {
-        margin-right: 0px;
-        margin-bottom: 00px;
-    }
-
-    h3 {
-        margin-top: 40px;
-    }
+.price {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: var(--off-black);
+    text-align: center;
+    color: #fff;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
 }

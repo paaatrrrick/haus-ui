@@ -2,7 +2,6 @@ const UploadedPhoto = ({ photo, handlePhotoRemove, index }) => {
 
     const isMiddle = index % 3 === 1;
     console.log(isMiddle);
-
     return (
         <div key={index} className={`picturesList ${(index % 3 === 1) && 'middleImage'}`}>
             <img src={URL.createObjectURL(photo)} alt={photo.name} className={`uploadedPhotoDisplayImg`} />
