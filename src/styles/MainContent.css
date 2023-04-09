@@ -1,0 +1,200 @@
+.MainContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2% 4%;
+
+}
+
+.mobile-main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-main-content img {
+    margin-top: 30px;
+    width: 100%;
+    aspect-ratio: 6/5;
+}
+
+.mobile-main-content button {
+    margin-top: -20px;
+}
+
+.mobile-main-content h4 {
+    margin-top: 20px;
+}
+
+.mobile-main-content p {
+    margin-top: 20px;
+}
+
+.default-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 160px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--off-black);
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.default-button:hover {
+    background-color: #dddddd;
+    color: var(--off-black);
+    border: 1px solid var(--off-black);
+}
+
+.default-button.inverse-button {
+    color: var(--off-black);
+    background-color: #fff;
+    width: 240px;
+    padding: 0px;
+}
+
+.default-button.inverse-button:hover {
+    background-color: var(--off-black);
+    color: #fff;
+    border: none;
+}
+
+.desktop-main-content {
+    width: 100%;
+    max-width: var(--largeMaxWidth);
+    padding: 2% 0%;
+    margin-bottom: 50px;
+}
+
+.desktop-main-content * {
+    color: #fff;
+}
+
+.desktop-main-content img {
+    width: 100%;
+    aspect-ratio: 10/4;
+}
+
+.desktop-main-content .desktop-main-text {
+    /* position: absolute;
+    top: calc(92vw * 0.25);
+    transform: translateY(-50%);
+    */
+    max-width: 460px;
+    position: relative;
+    bottom: calc(min(100%, var(--largeMaxWidth)) * 0.25);
+    margin-top: calc(min(100%, var(--largeMaxWidth)) * -0.25);
+    left: 2%;
+}
+
+.main-text-h4 {
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+}
+
+.main-text-p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+
+}
+
+.main-text-tinytext {
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+
+}
+
+.carousel-container-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 75px;
+    max-width: var(--largeMaxWidth);
+}
+
+.main-second-text {
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: var(--largeMaxWidth);
+}
+
+.main-second-text div {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.main-second-text h4 {
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-second-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.main-second-text button {
+    width: 40%;
+}
+
+
+@media (max-width: 900px) {
+
+    .main-text-h4 {
+        width: 96%;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 0px;
+    }
+
+    .main-text-p {
+        width: 96%;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+
+    }
+
+    .main-container {
+        padding: 0%;
+    }
+
+}

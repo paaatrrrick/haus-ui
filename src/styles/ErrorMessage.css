@@ -1,0 +1,48 @@
+.error-message {
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    background-color: #fde0df;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 20000000;
+}
+
+
+.error-message__text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e45b63;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.error-message__close {
+    background-color: transparent;
+    border: none;
+    color: #e45b63;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+@media (max-width: 1200px) {
+    .error-message {
+        top: 70px;
+        width: 85vw;
+    }
+
+    .error-message__text {
+        width: 85%;
+    }
+
+}

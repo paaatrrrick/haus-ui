@@ -3,143 +3,38 @@
     height: 550px;
 }
 
-.formTopSection {
-    width: 100%;
-    height: 650px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin-bottom: 50px;
-    margin-top: 100px;
-}
-
-
-
-
-.userInputsFormDiv {
-    margin-top: 0px;
-    width: calc(90% - 400px);
-    max-width: 800px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.text-forms {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-
-
-
-.text-forms div p {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-family: 'Helvetica Neue', sans-serif;
-}
-
-.uploadPhotosHeaders {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 10px 0px 10px 20px;
-    width: 100%;
-    text-align: left;
-    font-family: 'Helvetica Neue', sans-serif;
-}
-
-.text-forms div input {
-    font-size: 20px;
-    font-weight: 300;
-    width: 300px;
-    padding: 8px;
-    text-decoration: none;
-    border: 1px solid var(--off-black);
-    border-radius: 3px;
-    font-family: 'Helvetica Neue', sans-serif;
-}
-
-.text-forms div input::placeholder {
-    font-size: 20px;
-    font-weight: 300;
-    font-family: 'Helvetica Neue', sans-serif;
-}
-
-.text-forms div input:focus {
-    outline: none;
-}
-
-.picturesList {
-    display: flex;
-    flex-direction: row;
-    height: 30px;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.reverse-section {
-    flex-direction: row-reverse;
-}
-
-.midBtn {
-    width: 20px !important;
-    height: 20px !important;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 10px;
-    text-align: center;
-}
-
-.displayPhotosGrids {
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    overflow-y: auto;
-}
-
-.displayPhotosRow {
-    width: 100%;
-    height: 150px;
+.UploadedPhotosParent {
+    width: 98%;
+    margin-top: 20px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    overflow-x: auto;
 }
-
 
 .picturesList {
     position: relative;
-    height: 100%;
-    width: 32%;
     display: flex;
     flex-direction: row;
+    height: 80px;
+    width: 80px;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-right: 10px;
+    padding: 0px;
+    /* margin-right: 20px; */
 }
 
+
 .uploadedPhotoDisplayImg {
-    width: 100%;
-    aspect-ratio: 1/1;
+    width: 80px;
+    margin: 0px;
+    height: 80px;
     overflow: hidden;
     object-fit: cover;
     border-radius: 5px;
-
-}
-
-.middleImage {
-    margin-left: 2%;
-    margin-right: 2%;
 }
 
 .hoverButtonPhoto {
@@ -156,12 +51,6 @@
     cursor: pointer;
 }
 
-.UploadedPhotosParent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
 
 @media (max-width: 1400px) {
     .userInputsFormDiv {
@@ -177,102 +66,19 @@
         height: 40px !important;
     }
 
-    .Home-section {
-        margin-top: 0px;
-        width: 100%;
-    }
-
-    .first-section-text {
-        width: 100%;
-    }
-
-
-    h1 {
-        font-size: 35px;
-        margin-bottom: 0px;
-    }
-
-    h4 {
-        font-size: 24px;
-    }
-
-
-
-    .firstPicture {
-        margin-top: 20px;
-        width: 75%;
-        aspect-ratio: 1/1;
-        overflow: hidden;
-        object-fit: cover;
-        object-position: 100% 10%;
-        border-radius: var(--borderRadius);
-    }
-
-    .big-button {
-        width: 120px;
-        height: 30px;
-        font-size: 16px;
-    }
-
-    .section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section-reverse {
-        flex-direction: column-reverse;
-    }
-
     .text-forms div {
         margin-right: 0px;
         margin-bottom: 00px;
     }
 
-    h3 {
-        margin-top: 40px;
-    }
-
-    .formTopSection {
-        height: auto;
-        align-items: center;
-        justify-content: center;
-        margin-top: 0px;
-    }
-
-    .Carousel-parent {
-        aspect-ratio: 0.8/1;
-        width: 80vw;
-    }
-
-    .formTopSection {
-        flex-direction: column;
-    }
-
-    .text-forms {
-        width: 100%;
-        margin-top: 70px;
-        align-items: center;
-    }
-
-    .text-forms div p {
-        font-size: 16px
-    }
 
     .uploadPhotosHeaders {
         font-size: 16px;
     }
 
-    .text-forms div input {
-        font-size: 16px;
-    }
-
-    .text-forms div input::placeholder {
-        font-size: 16px;
-    }
 
     .UploadedPhotosParent {
-        margin-top: 50px;
-        width: 100%;
+        width: 90vw;
         align-items: center;
     }
 

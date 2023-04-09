@@ -1,0 +1,41 @@
+.ThankYou {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ThankYou-content {
+    width: 40%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.ThankYou-h1 {
+    color: var(--off-black);
+    font-size: 34px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.ThankYou-p1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: var(--off-black);
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.ThankYou-p2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: rgb(55, 55, 55);
+    margin: 0px;
+    padding: 0px;
+}

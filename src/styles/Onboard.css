@@ -1,0 +1,257 @@
+.Onboard {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    min-height: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.SUBMIT {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--off-black);
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: 1s;
+}
+
+.price {
+    transition: 1s;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--off-black);
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
+h1 {
+    width: 100%;
+    text-align: start;
+    font-size: 40px;
+}
+
+.Onboard .ButtonBar {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ButtonBar button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 160px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--off-black);
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.disabled-button {
+    cursor: not-allowed !important;
+}
+
+.disabled-button:hover {
+    background-color: var(--off-black) !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.disabled-button * {
+    cursor: not-allowed !important;
+}
+
+.ButtonBar button:hover {
+    background-color: #dddddd;
+    color: var(--off-black);
+    border: 1px solid var(--off-black);
+}
+
+.enabled-button * {
+    transition: 1s;
+}
+
+.enabled-button:hover * {
+    background-color: #dddddd;
+    color: var(--off-black);
+    border: none;
+}
+
+/* .ButtonBar button:hover * {
+    background-color: #dddddd;
+    color: var(--off-black);
+} */
+
+
+.Onboard-input {
+    width: 300px;
+    height: 40px;
+    margin: 0px;
+    margin-right: 30px;
+    padding: 0px 12px;
+    color: var(--off-black);
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    border: 1px solid #212529;
+}
+
+.Onboard-input:focus {
+    outline: none;
+}
+
+.Onboard-input.Big {
+    width: 350px;
+}
+
+
+.onboard-p {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Onbard-inputsName-Email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 98%;
+}
+
+.onboard-upload-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 98%;
+    margin-top: 40px;
+}
+
+.upload-photos-button {
+    width: 200px;
+    height: 40px;
+    margin: 0px;
+    margin-right: 30px;
+    padding: 0px 12px;
+    color: var(--off-black);
+    font-size: 20px;
+    font-weight: 300;
+    border: 1px solid #212529;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.onboard-uploadedphotos {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+
+
+@media (max-width: 1200px) {
+    .Onboard {
+        width: 95%;
+        height: auto;
+        min-height: 225px;
+    }
+
+    .Onboard .ButtonBar {
+        width: 98%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .ButtonBar button {
+        width: 100px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    .Onboard-input {
+        width: 100%;
+        height: 30px;
+        margin: 0px;
+        padding: 0px 8px;
+        color: var(--off-black);
+        font-size: 16px;
+    }
+
+    .Onbard-inputsName-Email {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .Onboard-input {
+        margin-top: 20px;
+    }
+
+    .onboard-upload-buttons {
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .upload-photos-button {
+        width: 224px;
+        margin-top: 20px;
+    }
+
+    .UploadedPhotosParent {
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .upload-photos-button {
+        width: 90vw;
+        height: 36px;
+    }
+
+    .SUBMIT {
+        font-size: 14px;
+    }
+
+
+    .price {
+        font-size: 12px;
+    }
+
+}
